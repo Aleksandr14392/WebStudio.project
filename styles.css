@@ -94,11 +94,11 @@
     }
     
 .nine {
-    position: absolute;
+    /* position: absolute; */
     margin: 40px 0px 0px 0px;
     width: 1511px;
     height: 500x;
-    background-image: url(./Img.png);
+    background-image: url(./bg.jpg);
     }
     
 .ten {
