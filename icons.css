@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?cggwzy');
-  src:  url('fonts/icomoon.eot?cggwzy#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?cggwzy') format('truetype'),
-    url('fonts/icomoon.woff?cggwzy') format('woff'),
-    url('fonts/icomoon.svg?cggwzy#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?s3bcv7');
+  src:  url('fonts/icomoon.eot?s3bcv7#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?s3bcv7') format('truetype'),
+    url('fonts/icomoon.woff?s3bcv7') format('woff'),
+    url('fonts/icomoon.svg?s3bcv7#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,24 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-Client-1:before {
+  content: "\e925";
+}
+.icon-Client-2:before {
+  content: "\e926";
+}
+.icon-Client-3:before {
+  content: "\e927";
+}
+.icon-Client-4:before {
+  content: "\e928";
+}
+.icon-Client-5:before {
+  content: "\e929";
+}
+.icon-Client-6:before {
+  content: "\e92a";
+}
 .icon-antenna .path1:before {
   content: "\e902";
   color: rgb(33, 33, 33);
@@ -79,43 +97,15 @@
 }
 .icon-facebook:before {
   content: "\e922";
-  color: #afb1b8;
 }
 .icon-instagram:before {
   content: "\e923";
-  color: #afb1b8;
 }
 .icon-linkedin:before {
   content: "\e924";
-  color: #afb1b8;
-}
-.icon-logo-1:before {
-  content: "\e925";
-  color: #afb1b8;
-}
-.icon-logo-2:before {
-  content: "\e926";
-  color: #afb1b8;
-}
-.icon-logo-3:before {
-  content: "\e927";
-  color: #afb1b8;
-}
-.icon-logo-4:before {
-  content: "\e928";
-  color: #2196f3;
-}
-.icon-logo-5:before {
-  content: "\e929";
-  color: #afb1b8;
-}
-.icon-logo-6:before {
-  content: "\e92a";
-  color: #afb1b8;
 }
 .icon-twitter:before {
   content: "\e92b";
-  color: #afb1b8;
 }
 .icon-smartphone:before {
   content: "\e900";
