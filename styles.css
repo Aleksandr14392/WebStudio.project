@@ -1,29 +1,31 @@
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;   
+}
+
+
 @media screen and (min-width: 769px) {
-    body {
-        margin: 0;
-        background-color: white;
-        width: 1600px;
-    }
-    
-    a {
-        text-decoration: none;
-    }
-    
+   
     /* Header */
-    
+
     header {
-        width: 100%;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        width: 1170px;
         height: 80px;
+        align-items: center;
     }
     
     .one {
-        position: absolute;
-        left: 215px;
-        top: 24px;
         font-family: 'Raleway';
         font-weight: 700;
         font-size: 26px;
         color: #2196F3;
+        letter-spacing: 0.03em;
     }
     
     .three {
@@ -32,109 +34,73 @@
         color: black;
     }
     
-    header nav {
-        position: absolute;
+    nav {
         width: 290px;
         height: 16px;
         display: flex;
-        align-items: stretch;
-        left: 453px;
-        top: 32px;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 93px;
     }
     
-    header nav a {
+    nav a {
         font-family: 'Roboto';
         font-weight: 500;
         font-size: 14px;
         color: #212121;
+        text-align: center;
+        letter-spacing: 0.02em;
     }
-    
-    .four {
-        width: 33%;
-        height: inherit;
-    }
-        
-    .five {
-        width: 33%;
-        height: inherit;
-    }
-        
-    .six {
-        width: 33%;
-        height: inherit;
-    }
-        
-    .four:hover {
+
+    .four:hover, .five:hover, .six:hover {
         color: #2196F3;
     }
-        
-    .five:hover {
-        color: #2196F3;
-    }
-        
-    .six:hover {
-        color: #2196F3;
-    }
-    
-    .email {
-        width: 161px;
-        height: 16px;
-        left: 1052px;
-        top: 32px;
-        position: absolute;
+
+    .email, .tel {
         font-family: 'Roboto';    
         font-weight: 500;
         font-size: 14px;
-        letter-spacing: 0.02em;
-        color: #757575;   
+        color: #757575;
     }
-    
-    .icon-email {
-        font-size: 12px;
-        margin-top: 2px;
-        margin-bottom: 2px;
-        margin-right: 8px;
-    }
-    
-    .email:hover {
-        color: #2196F3;
+
+    .email {
+        margin-left: 309px; 
     }
     
     .tel {
-        position: absolute;
-        width: 142px;
-        height: 16px;
-        left: 1243px;
-        top: 32px;
-        font-family: 'Roboto';    
-        font-weight: 500;
-        font-size: 14px;
-        letter-spacing: 0.02em;
-        color: #757575;   
+        margin-left: 34px;
+    }
+
+    .icon-email {
+        font-size: 12px;
     }
     
     .icon-smartphone {
         font-size: 16px;
+    }
+    
+    .icon-email, .icon-smartphone {
         margin-top: 2px;
         margin-bottom: 2px;
-        margin-right: 8px;
+        margin-right: 10px;
     }
     
-    .tel:hover {
+    .email:hover, .tel:hover {
         color: #2196F3;
     }
+
+    .icon-hover {
+        display: none;
+    }
     
-    /* Main */
-    
-    
+
     /* hero */
     
     .hero {
-        width: 1600px;
+        width: 100vw;
         height: 600px;
         background-image: url(./images/background.jpg);
         background-color: rgba(47, 48, 58, 0.4);
-        background-repeat: no-repeat;
         background-size: cover;
         background-blend-mode: overlay;
         display: flex;
@@ -176,11 +142,11 @@
     /* differents */
     
     .differents {
-        position: absolute;
         width: 1170px;
         height: 251px;
-        left: 215px;
-        top: 774px;
+        margin-top: 94px;
+        margin-left: auto;
+        margin-right: auto;
         display: flex;
         justify-content: space-between;
     }
@@ -209,21 +175,9 @@
         margin-top: 10px;
     }
     
-    .icon-antenna {
+    .icon-antenna, .icon-clock, .icon-diagram, .icon-astronaut {
         font-size: 70px;
     }
-    
-    .icon-clock {
-        font-size: 70px;
-    } 
-    
-    .icon-diagram {
-        font-size: 70px;
-    }
-    
-    .icon-astronaut {
-        font-size: 70px;
-    } 
     
     .svgbg {
         width: inherit;
@@ -237,11 +191,11 @@
     /* whatwedo */
     
     .whatwedo {
-        position: absolute;
         width: 1170px;
         height: 386px;
-        left: 215px;
-        top: 1119px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 94px;
     }
     
     .whatwedo h4 {
@@ -263,6 +217,8 @@
     .photo {
         width: 370px;
         height: 294px;
+        display: flex;
+        align-items: flex-end;
     }
 
     .photo1 {
@@ -276,16 +232,34 @@
     .photo3 {
         background-image: url(./images/img2.jpg);
     }
-    
+
+    .inphoto {
+        width: 370px;
+        height: 70px;
+        background: rgba(47, 48, 58, 0.8);
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 14px;
+        color: #FFFFFF;
+        display: flex;
+        align-items: center;
+    }
+
+    .inphoto span {
+        margin: auto;
+    }
+
     
     /* ourteam */
     
     .ourteam {
-        position: absolute;
-        width: 1600px;
+        width: 100vw;
         height: 708px;
-        top: 1599px;
         background-color: #F5F4FA;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 94px;
     }
     
     .ourteam h4 {
@@ -293,7 +267,6 @@
         font-weight: 700;
         font-size: 36px;
         color: #212121;
-        text-align: center;
         margin: 0;
         margin-top: 94px;
     }
@@ -302,7 +275,6 @@
         width: 1170px;
         height: 428px;
         margin-top: 50px;
-        margin-left: 215px;
         display: flex;
         justify-content: space-between;
     }
@@ -360,11 +332,14 @@
     /* clients */
     
     .clients {
-        position: absolute;
         width: 1170px;
         height: 182px;
-        left: 215px;
-        top: 2401px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 94px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
     
     .clients h4 {
@@ -376,42 +351,48 @@
         text-align: center;
     }
     
-    .icon-Client-1, .icon-Client-2, .icon-Client-3, .icon-Client-4, .icon-Client-5, .icon-Client-6 {
+    .icon-Client {
         color: #afb1b8;
         font-size: 90px;
         border: 1px solid #afb1b8;
         border-radius: 4px;
         margin-right: 30px;
     }
-    
-    .icon-Client-6 {
-        margin-right: 0;
-    }
-    
+
     .icon-Client-1:hover, .icon-Client-2:hover, .icon-Client-3:hover, .icon-Client-4:hover, .icon-Client-5:hover, .icon-Client-6:hover {
         color: #2196F3;
         border: 1px solid #2196F3;
     }
-    
+
     .clients div {
         margin-top: 50px;
+        width: inherit;
+        height: 92px;
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
     }
     
     
     /* footer */
     
     footer {
-        position: absolute;
-        width: 100%;
+        width: 100vw;
         height: 252px;
-        top: 2677px;
         background: #2F303A;
+        margin-top: 94px;
+    }
+
+    .footer {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        width: 1170px;
+        height: 252px;
     }
     
     .one1 {
-        margin: 60px 0 0 215px;
+        margin-top: 60px;
         font-family: 'Raleway';
         font-weight: 700;
         font-size: 26px;
@@ -424,27 +405,13 @@
         color: white;
     }
     
-    .ftc {
-        width: 231px;
-        height: 81px;
-        margin: 20px 0 0 215px;
-    }
-    
     .fta {
         font-family: 'Roboto';
         font-weight: 400;
         font-size: 14px;    
-        color: #FFFFFF;
-    }
-    
-    .fte {
-        font-family: 'Roboto';    
-        font-weight: 500;
-        font-size: 14px;
-        letter-spacing: 0.02em;
-        color: #757575;
+        color: white;
         margin: 0;
-        margin-top: 9px;
+        margin-top: 20px;
     }
     
     .ftt {
@@ -458,11 +425,10 @@
     }
     
     .fts {
-        position: absolute;
         width: 206px;
         height: 80px;
-        left: 516px;
-        top: 72px;
+        margin-left: 70px;
+        margin-top: 72px;
     }
     
     .fts h4 {
@@ -480,7 +446,11 @@
         display: flex;
         justify-content: space-between;
         margin-top: 20px;
-    }   
+    }
+    
+    .sociallinks1 .icon-instagram, .sociallinks1 .icon-linkedin, .sociallinks1 .icon-twitter, .sociallinks1 .icon-facebook {
+        color: white;
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -514,6 +484,7 @@
         top: 34.5px;
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
     }
     
     header nav a {
@@ -522,23 +493,44 @@
         font-size: 14px;
         color: #212121;
     }
-    
+
     .four {
-        width: 33%;
-        height: inherit;
-        text-align: center;
+        /* width: 33%; */
+        /* height: inherit; */
+        /* text-align: center; */
+        /* display: flex; */
+        /* align-items:stretch; */
+        /* flex-direction: column-reverse; */
+        /* align-self:flex-start; */
+        /* width: 47px; */
+        /* height: 45.21px; */
+
+    }
+
+    header nav .p {
+        /* align-self: flex-start; */
+        /* margin: 0 0 0 ; */
+        /* margin-top: 0; */
+        /* margin-bottom: 29px; */
+
+    }
+
+    .icon-hover {
+        font-size: 4px;
+        margin-top: 0;
+        margin-left: 0;
     }
         
     .five {
-        width: 33%;
-        height: inherit;
-        text-align: center;
+        /* width: 33%; */
+        /* height: inherit; */
+        /* text-align: center; */
     }
         
     .six {
-        width: 33%;
-        height: inherit;
-        text-align: center;
+        /* width: 33%; */
+        /* height: inherit; */
+        /* text-align: center; */
     }
         
     .four:hover {
