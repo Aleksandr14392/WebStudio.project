@@ -1,29 +1,31 @@
+body {
+    margin: 0;    
+}
+    
+a {
+    text-decoration: none;
+}
+    
+
 @media screen and (min-width:768px) {
-    body {
-        margin: 0;
-        background-color: white;
-        width: 1600px;
-    }
-    
-    a {
-        text-decoration: none;
-    }
-    
+
     /* Header */
     
     header {
-        width: 100%;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        width: 1170px;
         height: 80px;
+        align-items: center;
     }
     
     .one {
-        position: absolute;
-        left: 215px;
-        top: 24px;
         font-family: 'Raleway';
         font-weight: 700;
         font-size: 26px;
         color: #2196F3;
+        letter-spacing: 0.03em;
     }
     
     .three {
@@ -32,110 +34,73 @@
         color: black;
     }
     
-    header nav {
-        position: absolute;
+    nav {
         width: 290px;
         height: 16px;
         display: flex;
-        align-items: stretch;
-        left: 453px;
-        top: 32px;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 93px;
     }
     
-    header nav a {
+    nav a {
         font-family: 'Roboto';
         font-weight: 500;
         font-size: 14px;
         color: #212121;
+        text-align: center;
+        letter-spacing: 0.02em;
     }
-    
-    .four {
-        width: 33%;
-        height: inherit;
-    }
-        
-    .five {
-        width: 33%;
-        height: inherit;
-    }
-        
-    .six {
-        width: 33%;
-        height: inherit;
-    }
-        
-    .four:hover {
+
+    .navtext:hover {
         color: #2196F3;
     }
-        
-    .five:hover {
-        color: #2196F3;
-    }
-        
-    .six:hover {
-        color: #2196F3;
-    }
-    
-    .email {
-        width: 161px;
-        height: 16px;
-        left: 1052px;
-        top: 32px;
-        position: absolute;
+
+    .email, .tel {
         font-family: 'Roboto';    
         font-weight: 500;
         font-size: 14px;
-        letter-spacing: 0.02em;
-        color: #757575;   
+        color: #757575;
     }
-    
-    .icon-email {
-        font-size: 12px;
-        margin-top: 2px;
-        margin-bottom: 2px;
-        margin-right: 8px;
-        
-    }
-    
-    .email:hover {
-        color: #2196F3;
+
+    .email {
+        margin-left: 309px; 
     }
     
     .tel {
-        position: absolute;
-        width: 142px;
-        height: 16px;
-        left: 1243px;
-        top: 32px;
-        font-family: 'Roboto';    
-        font-weight: 500;
-        font-size: 14px;
-        letter-spacing: 0.02em;
-        color: #757575;   
+        margin-left: 34px;
     }
-    
-    .icon-smartphone {
-        font-size: 16px;
-        margin-top: 2px;
-        margin-bottom: 2px;
-        margin-right: 8px;
-        
+
+    .icon-email, .icon-smartphone {
+        display: none;
     }
-    
-    .tel:hover {
+
+    .email:hover, .tel:hover {
         color: #2196F3;
     }
 
+    .icon-hover {
+        display: none;
+    }
+
+    .underline {
+        width: 100vw;
+        height: 1px;
+        background-color: #ECECEC;
+    }
+
+/* portfolio */
+    
+
     .portfolio {
-        position: absolute;
         width: 1170px;
         height: 1360px;
-        left: 215px;
-        top: 174px;
+        margin: 94px auto 94px auto; 
     }
 
     .buttons {
-        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
         width: 611px;
         height: 54px;
         display: flex;
@@ -153,29 +118,27 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        height: 38px;
     }
 
     .buttonp1 {
         width: 73px;
-        height: 38px;
     }
     
-    .buttonp2 {width: 128px;
-        height: 38px;
+    .buttonp2 {
+        width: 128px;
     }
     
     .buttonp3 {
         width: 145px;
-        height: 38px;
     }
     
     .buttonp4 {
         width: 103px;
-        height: 38px;
     }
     
-    .buttonp5 {width: 130px;
-        height: 38px;
+    .buttonp5 {
+        width: 130px;
     }
 
     .buttonp:hover {
@@ -183,160 +146,85 @@
         color: white;
     }
 
-    .project {
-        box-shadow: 4px 2px 3px 2px #757575 ;
+    .projects {
+        display: flex;
+        width: 1170px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: 50px;
     }
 
-    .project1 {
-        position: absolute;
+    .project {
         width: 370px;
         height: 404px;
-        left: 215px;
-        top: 262px;
-    }
-    
-    .project2 {
-        position: absolute;
-        width: 370px;
-        height: 404px;
-        left: 615px;
-        top: 262px;
-    }
-    
-    .project3 {
-        position: absolute;
-        width: 370px;
-        height: 404px;
-        left: 1015px;
-        top: 262px;
-    }
-    
-    .project4 {
-        position: absolute;
-        width: 370px;
-        height: 404px;
-        left: 215px;
-        top: 696px;
-    }
-    
-    .project5 {
-        position: absolute;
-        width: 370px;
-        height: 404px;
-        left: 615px;
-        top: 696px;
-    }
-    
-    .project6 {
-        position: absolute;
-        width: 370px;
-        height: 404px;
-        left: 1015px;
-        top: 696px;
-    }
-    
-    .project7 {
-        position: absolute;
-        width: 370px;
-        height: 404px;
-        left: 215px;
-        top: 1130px;
-    }
-    
-    .project8 {
-        position: absolute;
-        width: 370px;
-        height: 404px;
-        left: 615px;
-        top: 1130px;
-    }
-    
-    .project9 {
-        position: absolute;
-        width: 370px;
-        height: 404px;
-        left: 1015px;
-        top: 1130px;
+        border: 1px solid #EEEEEE;
     }
 
     .prjctbg {
         width: 370px;
         height: 294px;
+        display: flex;
+        font-family: 'Roboto';
+        font-size: 18px;
+        letter-spacing: 0.03em;
+        color: transparent;
+        transition: box-shadow .3s cubic-bezier(0.23, 1, 0.320, 1)
+    }
+
+    .prjctbg span {
+        margin: 64px 24px;
+    }
+
+    .project:hover .prjctbg {
+        box-shadow: 2000px 0 inset rgba(33, 150, 243, 0.9);
+        color: white;
+    }
+
+    .project:hover {
+        box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%), 1px 4px 6px rgb(0 0 0 / 16%);
     }
 
     .prjctbg1 {
         background-image: url(./images/ererererrre.jpg);
     }
 
-    .prjctbg1:hover {
-        box-shadow: inset 2000px 0 0 rgba(33, 150, 243, 0.9);
-    }
-    
     .prjctbg2 {
         background-image: url(./images/img\ \(1\).jpg);
     }
-    
-    .prjctbg2:hover {
-        box-shadow: inset 2000px 0 0 rgba(33, 150, 243, 0.9);
-    }
-    
+
     .prjctbg3 {
         background-image: url(./images/img\ \(2\).jpg);
-    }
-    
-    .prjctbg3:hover {
-        box-shadow: inset 2000px 0 0 rgba(33, 150, 243, 0.9);
     }
     
     .prjctbg4 {
         background-image: url(./images/img\ \(3\).jpg);
     }
     
-    .prjctbg4:hover {
-        box-shadow: inset 2000px 0 0 rgba(33, 150, 243, 0.9);
-    }
-    
     .prjctbg5 {
         background-image: url(./images/img\ \(7\).jpg);
-    }
-    
-    .prjctbg5:hover {
-        box-shadow: inset 2000px 0 0 rgba(33, 150, 243, 0.9);
     }
     
     .prjctbg6 {
         background-image: url(./images/img\ \(8\).jpg);
     }
     
-    .prjctbg6:hover {
-        box-shadow: inset 2000px 0 0 rgba(33, 150, 243, 0.9);
-    }
-    
     .prjctbg7 {
         background-image: url(./images/img\ \(9\).jpg);
-    }
-    
-    .prjctbg7:hover {
-        box-shadow: inset 2000px 0 0 rgba(33, 150, 243, 0.9);
     }
     
     .prjctbg8 {
         background-image: url(./images/img\ \(10\).jpg);
     }
     
-    .prjctbg8:hover {
-        box-shadow: inset 2000px 0 0 rgba(33, 150, 243, 0.9);
-    }
-    
     .prjctbg9 {
         background-image: url(./images/img\ \(11\).jpg);
     }
 
-    .prjctbg9:hover {
-        box-shadow: inset 2000px 0 0 rgba(33, 150, 243, 0.9);
-    }
-
     .bolder {
+        margin: 0;
+        margin-top: 26px;
+        margin-left: 24px;
         font-family: 'Roboto';
         font-weight: 700;
         font-size: 18px;
@@ -344,6 +232,9 @@
     }
 
     .thinner {
+        margin: 0;
+        margin-top: 10px;
+        margin-left: 24px;
         font-family: 'Roboto';
         font-weight: 400;
         font-size: 16px;
@@ -354,16 +245,20 @@
     /* footer */
     
     footer {
-        position: absolute;
-        width: 1600px;
+        width: 100vw;
         height: 252px;
-        left: 0px;
-        top: 1628px;
         background: #2F303A;
+        display: flex;
+    }
+
+    .flex-item1 {
+        width: 1170px;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .one1 {
-        margin: 60px 0 0 215px;
+        margin-top: 60px;
         font-family: 'Raleway';
         font-weight: 700;
         font-size: 26px;
@@ -376,13 +271,9 @@
         color: white;
     }
     
-    .ftc {
-        width: 231px;
-        height: 81px;
-        margin: 20px 0 0 215px;
-    }
-    
     .fta {
+        margin: 0;
+        margin-top: 20px;
         font-family: 'Roboto';
         font-weight: 400;
         font-size: 14px;    
@@ -412,14 +303,6 @@
     .fts {
         display: none;
     }
-    
-    .fts h4 {
-        display: none;
-    }
-    
-    .sociallinks1 {
-        display: none;
-    }  
 }
 
 @media screen and (max-width:768px) {

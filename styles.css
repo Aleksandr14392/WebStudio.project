@@ -1,5 +1,7 @@
 body {
     margin: 0;
+    width: 100vw;
+    height: 100vh;
 }
 
 a {
@@ -52,7 +54,7 @@ a {
         letter-spacing: 0.02em;
     }
 
-    .four:hover, .five:hover, .six:hover {
+    .navtext:hover {
         color: #2196F3;
     }
 
@@ -92,6 +94,62 @@ a {
     .icon-hover {
         display: none;
     }
+
+
+    /* modal window */
+
+    .modalwindow {
+        position: fixed;
+        display: none;
+        flex-direction: column;
+        left: calc(50vw - 264px);
+        top: calc(50vh - 290.5px);
+        width: 528px;
+        height: 581px;
+        background-color: white;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+    }
+
+    .modalwindow:target {
+        display: flex;
+    }
+
+    .icon-close {
+        font-size: 30px;
+        margin: 8px 8px 0 auto;
+    }
+
+    .modaltitle {
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 20px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #212121;
+        margin: 0;
+        margin-top: 2px;
+    }
+    
+    .button {
+        width: 200px;
+        height: 50px;
+        background: #2196F3;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+    }
+    
+    .button span {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: 0.06em;
+        color: white;
+    }
     
 
     /* hero */
@@ -114,31 +172,11 @@ a {
         font-family: 'Roboto';
         font-weight: 900;
         font-size: 44px;
-        color: white;
-    }
-    
-    .button {
-        width: 200px;
-        height: 50px;
-        background: #2196F3;
-        border-radius: 4px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        border: none;
-    }
-    
-    .button span {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
         letter-spacing: 0.06em;
         color: white;
     }
-    
-    
+
+
     /* differents */
     
     .differents {
@@ -341,6 +379,10 @@ a {
         align-items: center;
         flex-direction: column;
     }
+
+    .clients:target {
+        filter: blur(5px);
+    }
     
     .clients h4 {
         font-family: 'Roboto';
@@ -390,7 +432,7 @@ a {
         width: 1170px;
         height: 252px;
     }
-    
+
     .one1 {
         margin-top: 60px;
         font-family: 'Raleway';
