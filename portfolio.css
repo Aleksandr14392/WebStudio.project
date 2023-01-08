@@ -147,9 +147,9 @@ a {
     }
 
     .projects {
-        display: flex;
         width: 1170px;
-        flex-direction: row;
+        height: 1272px;
+        display: flex;
         flex-wrap: wrap;
         gap: 30px;
         margin-top: 50px;
@@ -158,7 +158,7 @@ a {
     .project {
         width: 370px;
         height: 404px;
-        border: 1px solid #EEEEEE;
+        outline: 1px solid #EEEEEE;
     }
 
     .prjctbg {

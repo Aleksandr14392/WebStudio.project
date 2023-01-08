@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?id0lra');
-  src:  url('fonts/icomoon.eot?id0lra#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?id0lra') format('truetype'),
-    url('fonts/icomoon.woff?id0lra') format('woff'),
-    url('fonts/icomoon.svg?id0lra#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?8t86c8');
+  src:  url('fonts/icomoon.eot?8t86c8#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?8t86c8') format('truetype'),
+    url('fonts/icomoon.woff?8t86c8') format('woff'),
+    url('fonts/icomoon.svg?8t86c8#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -27,18 +27,17 @@
 
 .icon-close .path1:before {
   content: "\e932";
-  color: gray;
+  /* color: rgb(255, 255, 255); */
 }
 .icon-close .path2:before {
   content: "\e933";
   margin-left: -1em;
-  color: white;
+  /* color: none; */
 }
-
 .icon-close .path3:before {
   content: "\e934";
   margin-left: -1em;
-  color: black;
+  /* color: rgb(0, 0, 0); */
 }
 .icon-Client-1:before {
   content: "\e925";
@@ -64,36 +63,6 @@
   content: "\e92a";
   /* color: #afb1b8; */
 }
-.icon-label-1 .path1:before {
-  content: "\e900";
-  color: rgb(47, 48, 58);
-  opacity: 0.8;
-}
-.icon-label-1 .path2:before {
-  content: "\e92c";
-  margin-left: -5.2861328125em;
-  color: rgb(255, 255, 255);
-}
-.icon-label-2 .path1:before {
-  content: "\e92d";
-  color: rgb(47, 48, 58);
-  opacity: 0.8;
-}
-.icon-label-2 .path2:before {
-  content: "\e92e";
-  margin-left: -5.2861328125em;
-  color: rgb(255, 255, 255);
-}
-.icon-label .path1:before {
-  content: "\e92f";
-  color: rgb(47, 48, 58);
-  opacity: 0.8;
-}
-.icon-label .path2:before {
-  content: "\e930";
-  margin-left: -5.2861328125em;
-  color: rgb(255, 255, 255);
-}
 .icon-antenna .path1:before {
   content: "\e902";
   color: rgb(33, 33, 33);
@@ -101,7 +70,7 @@
 .icon-antenna .path2:before {
   content: "\e903";
   margin-left: -1em;
-  color: rgb(33, 150, 243);
+  color: rgb(33, 1/50, 243);
 }
 .icon-clock .path1:before {
   content: "\e919";
@@ -167,7 +136,7 @@
   /* color: #afb1b8; */
 }
 .icon-email:before {
-  content: "\e901";
+  content: "\e92c";
   /* color: #757575; */
 }
 .icon-astronaut .path1:before {
@@ -273,4 +242,17 @@
   content: "\e918";
   margin-left: -1em;
   color: rgb(33, 33, 33);
+}
+.icon-menu_40px-1:before {
+  content: "\e901";
+}
+.icon-Vector-2:before {
+  content: "\e935";
+  /* color: #2196f3; */
+}
+.icon-Vector-3:before {
+  content: "\e936";
+}
+.icon-Vector-4:before {
+  content: "\e937";
 }
